@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="survey-title">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This survey form is a project!</p>
+        
+        <!-- Form start -->
+        <div class="form-container">
+            <form id="survey-form" action="post">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="number" min="10" max="70" placeholder="Age">
+
+                <!-- Select section -->
+                <label for="civilStatus">Civil Status: 
+                    <select name="civilStatus" id="dropdown">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Single">Single</option>
+                        <option value="Inrelationship">In a relationship</option>
+                    </select>
+                </label>
+
+                <label for="education">What is your highest educational attainment?
+                    <select name="education" id="dropdown">
+                        <option value="">--Please choose an option--</option>
+                        <option value="BachelorDegree">Bachelor Degree</option>
+                        <option value="HighschoolDiploma">Highschool Diploma</option>
+                    </select>
+                </label>
+
+                <label class="gender">Gender:  
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </label>
+
+                <label>What programming language(s) do you know? (can be multiple choices)
+                    <input type="checkbox" name="language[]" value="HTML">HTML
+                    <input type="checkbox" name="language[]" value="CSS">CSS
+                    <input type="checkbox" name="language[]" value="JavaScript">JavaScript
+                    <input type="checkbox" name="language[]" value="Python">Python
+                    <input type="checkbox" name="language[]" value="Java">Java
+                </label>
+
+                <label for="comments">Any comments in the form?</label>
+                
+
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
